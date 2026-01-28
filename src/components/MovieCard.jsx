@@ -1,4 +1,4 @@
-export default function MovieCard({ movie }) {
+const MovieCard = ({ movie }) => {
   function onFavoriteButton() {
     alert("clicked");
   }
@@ -19,4 +19,5 @@ export default function MovieCard({ movie }) {
       </div>
     </div>
   );
-}
+};
+export default MovieCard;
