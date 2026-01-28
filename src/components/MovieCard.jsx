@@ -1,4 +1,5 @@
 import "../css/Moviecard.css";
+
 const MovieCard = ({ movie }) => {
   function onFavoriteButton() {
     alert("clicked");
