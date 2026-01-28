@@ -1,18 +1,63 @@
-# React + Vite
+# 🎬 React Movie Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, responsive movie exploration web application built with **React.js**. This project demonstrates how to handle asynchronous data fetching, manage complex UI states, and implement a modern search interface.
 
-Currently, two official plugins are available:
+![Vercel Deployment](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+**[View Live Project](https://react-movie-practice-project.vercel.app/)**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Real-time Movie Search:** Instantly find movies from the TMDB database.
+- **Dynamic Hero Section:** Showcases trending or featured content on the home page.
+- **Detailed Movie Cards:** Displays posters, ratings, and release dates at a glance.
+- **Responsive Layout:** Fully optimized for mobile, tablet, and desktop viewing.
+- **Seamless Navigation:** Smooth transitions between search results and home views.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Technology   | Purpose                               |
+| :----------- | :------------------------------------ |
+| **React**    | Component-based UI Architecture       |
+| **CSS3**     | Custom styling and responsive design  |
+| **TMDB API** | External movie data source            |
+| **Vercel**   | High-performance hosting & deployment |
+
+## 📦 Local Setup & Installation
+
+Follow these steps to get a local copy up and running:
+
+1. **Clone the repository**
+   ```bash
+   git clone (https://github.com/ferdaous-wahid/react-movie-practice-project.git)
+   ```
+2. **Install dependencies**
+
+```bash
+    npm install
+```
+
+3. **Get your API Key Sign up for an API key at The Movie Database (TMDB).**
+4. **Set up Environment Variables Create a .env file in the root directory:**
+
+```bash
+    REACT_APP_TMDB_API_KEY=your_key_here
+```
+
+5. **Run the application**f
+
+```bash
+    npm start
+```
+
+**🧠 What I Learned**
+**_Handling Asynchronous Data:_** Implementing useEffect to fetch data from a REST API without causing memory leaks or infinite loops.
+
+***Conditional Rendering: ***Displaying loading spinners and "No Results Found" states to improve UX.
+
+**_State Management:_** Using useState to manage search queries and API response data across components.
