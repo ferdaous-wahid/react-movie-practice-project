@@ -12,7 +12,7 @@
   font-weight: bold;
 }
 
-.navbar-link {
+.navbar-links {
   display: flex;
   gap: 2rem;
 }

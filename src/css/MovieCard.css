@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .movie-card:hover {
   transform: translateY(-5px);
 }
@@ -16,13 +15,6 @@
 .movie-poster {
   position: relative;
   aspect-ratio: 2/3;
-  width: 100%;
-}
-
-.movie-poster img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .movie-overlay {
