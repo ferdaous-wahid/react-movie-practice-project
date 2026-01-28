@@ -58,6 +58,6 @@ Follow these steps to get a local copy up and running:
 **🧠 What I Learned**
 **_Handling Asynchronous Data:_** Implementing useEffect to fetch data from a REST API without causing memory leaks or infinite loops.
 
-***Conditional Rendering: ***Displaying loading spinners and "No Results Found" states to improve UX.
+***Conditional Rendering:*** Displaying loading spinners and "No Results Found" states to improve UX.
 
 **_State Management:_** Using useState to manage search queries and API response data across components.
