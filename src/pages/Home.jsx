@@ -1,14 +1,30 @@
-import { useState } from "react";
+/* eslint-disable no-unused-vars */
+import { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
+import { searchMovies, getPopularMovies } from "../services/api";
+import "../css/Home.css";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const movies = [
-    { id: 1, title: "John wick", release_date: "2020" },
-    { id: 2, title: "Matrix", release_date: "2021" },
-    { id: 3, title: "Freeman", release_date: "2022" },
-    { id: 4, title: "Paradise", release_date: "2023" },
-  ];
+  const [movies, setMovies] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadPopularMovies = async () => {
+      try {
+        const popularMovies = await getPopularMovies();
+        setMovies(popularMovies);
+      } catch (err) {
+        console.log(err);
+        setError("Failed to load movies...");
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadPopularMovies();
+  }, []);
+
   const handleSearch = (e) => {
     e.preventDefault();
     alert(searchQuery);
@@ -28,11 +44,16 @@ const Home = () => {
           Search
         </button>
       </form>
-      <div className="movie-grid">
-        {movies.map((movie) => (
-          <MovieCard movie={movie} key={movie.id} />
-        ))}
-      </div>
+      {error && <div className="error-message">{error}</div>}
+      {loading ? (
+        <div className="loading">Loading...</div>
+      ) : (
+        <div className="movie-grid">
+          {movies.map((movie) => (
+            <MovieCard movie={movie} key={movie.id} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

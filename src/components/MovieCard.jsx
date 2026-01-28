@@ -1,3 +1,4 @@
+import "../css/Moviecard.css";
 const MovieCard = ({ movie }) => {
   function onFavoriteButton() {
     alert("clicked");
@@ -5,17 +6,19 @@ const MovieCard = ({ movie }) => {
   return (
     <div className="movie-card">
       <div className="movie-poster">
-        <img src={movie.url} alt="Can't found" />
+        <img
+          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+          alt={movie.title}
+        />
         <div className="movie-overlay">
-          <button
-            className="favorite-button"
-            onClick={onFavoriteButton}
-          ></button>
+          <button className="favorite-button" onClick={onFavoriteButton}>
+            ❤️
+          </button>
         </div>
       </div>
       <div className="movie-info">
         <h3>{movie.title}</h3>
-        <p>{movie.release_date}</p>
+        <p>{movie.release_date?.split("-")[0]}</p>
       </div>
     </div>
   );
