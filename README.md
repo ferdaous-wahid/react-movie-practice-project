@@ -33,26 +33,26 @@ A sleek, responsive movie exploration web application built with **React.js**. T
 Follow these steps to get a local copy up and running:
 
 1. **Clone the repository**
-   ```bash
+```bash
    git clone (https://github.com/ferdaous-wahid/react-movie-practice-project.git)
-   ```
+```
 2. **Install dependencies**
 
 ```bash
-    npm install
+   npm install
 ```
 
 3. **Get your API Key Sign up for an API key at The Movie Database (TMDB).**
 4. **Set up Environment Variables Create a .env file in the root directory:**
 
 ```bash
-    REACT_APP_TMDB_API_KEY=your_key_here
+   REACT_APP_TMDB_API_KEY=your_key_here
 ```
 
 5. **Run the application**f
 
 ```bash
-    npm start
+   npm start
 ```
 
 **🧠 What I Learned**
