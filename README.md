@@ -34,7 +34,7 @@ Follow these steps to get a local copy up and running:
 
 1. **Clone the repository**
 ```bash
-   git clone (https://github.com/ferdaous-wahid/react-movie-practice-project.git)
+   git clone https://github.com/ferdaous-wahid/react-movie-practice-project.git
 ```
 2. **Install dependencies**
 
